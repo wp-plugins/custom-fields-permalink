@@ -21,44 +21,44 @@ This plugin enable to make a permalink from custom field's value.
 
 == Usage ==
 
-Custom permalink tags:
-
- - %cfp_a_customfield_name%
- - %cfp_a_customfield_name_or_page_id%
- - %cfp_a_customfield_name_or_pagename%
-
-"a_customfield_name" can be replaced with an arbitrary field name.
-
-Examples:
-
-When a specification is as follows.
-
- - /%cfp_a_customfield_name%
-
- a entry has custom fields named "a_customfield_name":
-  > /a_value_of_customfield (a value of "a_customfield_name")
-
- a entry has not custom fields named "a_customfield_name":
-  > error!
-
-
-When a specification is as follows.
-
- - /%cfp_a_customfield_name_or_page_id%
-
- a entry has custom fields named "a_customfield_name":
-  > /a_value_of_customfield (a value of "a_customfield_name")
-
- a entry has not custom fields named "a_customfield_name":
-  > /1 (page_id)
-
-
-When a specification is as follows
-
- - /%cfp_a_customfield_name_or_pagename%
-
- a entry has custom fields named "a_customfield_name":
-  > /a_value_of_customfield (a value of "a_customfield_name")
-
- a entry has not custom fields named "a_customfield_name":
-  > /as_page_title (pagename)
+ > Custom permalink tags:
+ > 
+ >  - %cfp_a_customfield_name%
+ >  - %cfp_a_customfield_name_or_page_id%
+ >  - %cfp_a_customfield_name_or_pagename%
+ > 
+ > "a_customfield_name" can be replaced with an arbitrary field name.
+ > 
+ > Examples:
+ > 
+ > When a specification is as follows.
+ > 
+ >  - /%cfp_a_customfield_name%
+ > 
+ >  a entry has custom fields named "a_customfield_name":
+ >   > /a_value_of_customfield (a value of "a_customfield_name")
+ > 
+ >  a entry has not custom fields named "a_customfield_name":
+ >   > error!
+ > 
+ > 
+ > When a specification is as follows.
+ > 
+ >  - /%cfp_a_customfield_name_or_page_id%
+ > 
+ >  a entry has custom fields named "a_customfield_name":
+ >   > /a_value_of_customfield (a value of "a_customfield_name")
+ > 
+ >  a entry has not custom fields named "a_customfield_name":
+ >   > /1 (page_id)
+ > 
+ > 
+ > When a specification is as follows
+ > 
+ >  - /%cfp_a_customfield_name_or_pagename%
+ > 
+ >  a entry has custom fields named "a_customfield_name":
+ >   > /a_value_of_customfield (a value of "a_customfield_name")
+ > 
+ >  a entry has not custom fields named "a_customfield_name":
+ >   > /as_page_title (pagename)

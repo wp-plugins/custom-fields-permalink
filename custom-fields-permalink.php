@@ -4,7 +4,7 @@ Plugin Name: Custom Fields Permalink
 Plugin URI: http://tec.toi-planning.net/wp/custom-fields-permalink
 Description: This plugin enable to make a permalink from custom field's value.
 Author: toiplan
-Version: 0.1
+Version: 0.1.0.0
 Author URI: http://tec.toi-planning.net/
 */
 
