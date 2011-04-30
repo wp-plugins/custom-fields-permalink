@@ -3,8 +3,8 @@
 Contributors: toiplan
 Tags: customfields, permalink
 Requires at least: 2.6
-Tested up to: 0.1.0.0
-Stable tag: 0.1.0.0
+Tested up to: 0.1.0.1
+Stable tag: 0.1.0.1
 
 This plugin enable to make a permalink from custom field's value.
 

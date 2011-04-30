@@ -4,7 +4,7 @@ Plugin Name: Custom Fields Permalink
 Plugin URI: http://tec.toi-planning.net/wp/custom-fields-permalink
 Description: This plugin enable to make a permalink from custom field's value.
 Author: toiplan
-Version: 0.1.0.0
+Version: 0.1.0.1
 Author URI: http://tec.toi-planning.net/
 */
 
@@ -35,7 +35,7 @@ add_filter('post_link', 'custom_fields_permalink_filter', 10, 2);
 
 
 
-function custom_fields_permalink_post_rewrite_rules(&$value) {
+function custom_fields_permalink_post_rewrite_rules($value) {
 	$keys = array_keys($value);
 	$tmp = $value;
 
@@ -69,7 +69,7 @@ add_filter(
 
 
 
-function custom_fields_permalink_query_vars(&$value) {
+function custom_fields_permalink_query_vars($value) {
 	array_push($value, 'cfp', 'cfpk', 'cfpo');
 
 	return $value;
@@ -81,7 +81,7 @@ add_filter(
 
 
 $GLOBALS['custom_fields_permalink_processing'] = false;
-function custom_fields_permalink_request(&$value) {
+function custom_fields_permalink_request($value) {
 	if ($value['cfp']) {
 		$cfp = $value['cfp'];
 		$cfpk = $value['cfpk'];
